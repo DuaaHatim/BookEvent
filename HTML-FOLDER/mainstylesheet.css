@@ -1,0 +1,161 @@
+h1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "OpenDyslexicArabic-Bold", Arial, sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2.5rem;
+	margin-top: 2rem;
+	line-height: 0.5; /* Reduce line spacing */
+	text-transform: uppercase;
+	direction: rtl;
+}
+
+h1 img {
+	max-width: 15%; /* Make image smaller */
+	height: auto;
+	margin-bottom: -1rem; /* Reduce margin-bottom */
+	padding-bottom: 0rem;
+}
+
+
+      /* Style the header */
+header {
+	background-color: #ffffff; /* set your desired background color */
+	padding: 10px;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo img {
+	height: auto;
+	max-width: 50%;
+}
+
+	/* Set up a grid layout with 8 columns by default */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 20px;
+}
+
+
+	/* Style each book cover image */
+.grid-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+ 
+
+      /* Style the footer */
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.footer-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	margin-right: 20px;
+}
+
+.footer-left h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.social-icons {
+	display: flex;
+}
+
+.social-icons a {
+	color: #fff;
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+.social-icons img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.download-icons {
+	display: flex;
+	margin-top: 20px;
+}
+
+.download-icons a {
+	color: #fff;
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	margin-left: 20px;
+}
+
+.footer-right h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+	/* Change the grid layout to 4 columns on iPad portrait screens */
+@media only screen and (max-width: 768px) {
+  	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+  	}
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-left,
+	.footer-right {
+		margin: 0;
+		width: 100%;
+	}
+
+	.download-icons {
+		margin-top: 10px;
+	}
+}
+
+	/* Change the grid layout to 2 columns on mobile screens */
+@media only screen and (max-width: 480px) {
+  	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+ 	}
+
+	h1 {
+		font-size: 2rem;
+  	}
+	h1 img {
+	max-width: 25%; /* Make image smaller */
+	}
+}
+
+
